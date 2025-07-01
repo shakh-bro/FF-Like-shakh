@@ -18,7 +18,8 @@ SERVERS = {
     "EUROPE": os.getenv("EUROPE_SERVER", "https://clientbp.ggblueshark.com"),
     "IND": os.getenv("IND_SERVER", "https://client.ind.freefiremobile.com"),
     "BR": os.getenv("BR_SERVER", "https://client.us.freefiremobile.com"),
-}
+    "CIS":os.getenv("CIS_SERVER", "https://client.cis.freefiremobile.com"),
+}.
 
 
 token_cache = TokenCache(config_dir="config") 
