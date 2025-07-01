@@ -21,7 +21,7 @@ SERVERS = {
 }
 
 
-token_cache = TokenCache(servers_config=SERVERS) 
+token_cache = TokenCache(config_dir="config") 
 
 # Middleware pour gérer les requêtes
 @app.before_request
