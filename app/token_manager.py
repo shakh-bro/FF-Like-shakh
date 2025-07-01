@@ -1,3 +1,4 @@
+# app/token_manager.py
 import os
 import json
 import logging
@@ -27,6 +28,7 @@ class TokenCache:
 
     def get_tokens(self, region):
         return self.cache.get(region.upper(), [])
+
 def get_headers(token: str):
     return {
         'User-Agent': "Dalvik/2.1.0 (Linux; U; Android 9; ASUS_Z01QD Build/PI)",
